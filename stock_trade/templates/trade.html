@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trade detail</title>
+</head>
+<body>
+    <form action="{{url_for('show')}}" method="post">
+        <table>
+            <td>
+                <tr>股票代码：<input type="text" name="stock_code"> </tr>
+                <tr>股票名称：<input type="text" name="stock_name">  </tr>
+                <tr>52周最高：<input type="text" name="highest_price"> </tr>
+                <tr>52周低：<input type="text" name="lowerest_price"></tr>
+            </td>
+            <br>
+            <td>
+                 <tr>交易日期：<input type="text" name="trade_date"></tr>
+            </td>
+             <td>
+                 <tr>昨收： <input type="text" name="end_price"></tr>
+                <tr>今开： <input type="text" name="open_price"></tr>
+                <tr>最高价： <input type="text" name="high_price"></tr>
+                <tr>最低价： <input type="text" name="lower_price"></tr>
+             </td>
+               <td>
+                 <tr>买入/卖出价： <input type="text" name="buy_sale_price"></tr>
+                 <tr>数量：<input type="text" name="stock_quantity"> </tr>
+                 <tr>交易区分：<input type="radio" name="trade_type">  </tr>
+               <td>
+        保存：<input type="submit" name="save">
+        </table>
+    </form>
+</body>
+</html>
